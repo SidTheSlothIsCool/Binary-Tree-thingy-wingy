@@ -1,0 +1,33 @@
+public abstract class BinaryNode implements Comparable{
+   private BinaryNode left, right,value;
+   private Comparable myValue;
+
+   public BinaryNode(Comparable x) {
+       myValue = x;
+   }
+
+   public String toString(){
+       String temp = "Value:"+myValue+
+               ", Left:"+(left==null?null:left.myValue)+
+               ", Right:"+(right==null?null:right.myValue);
+       return temp;
+   }
+   public BinaryNode getValue(){
+       return value;
+   }
+   public BinaryNode left(){
+       return left;
+   }
+   public BinaryNode right(){
+       return right;
+   }
+   public void setRight(BinaryNode right){
+       this.right = right;
+   }
+   public void setLeft(BinaryNode left){
+       this.left = left;
+   }
+//other methods not shown.
+}
+
+
